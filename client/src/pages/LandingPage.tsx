@@ -179,8 +179,9 @@ export default function LandingPage() {
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="tag tag-emerald text-xs">ChatGPT</span>
+                <span className="tag tag-emerald text-xs">Copilot</span>
+                <span className="tag tag-emerald text-xs">Gemini</span>
                 <span className="tag tag-emerald text-xs">Freepik</span>
-                <span className="tag tag-emerald text-xs">Midjourney</span>
               </div>
             </motion.div>
 
@@ -542,13 +543,16 @@ export default function LandingPage() {
                         </h4>
                         <div className="flex flex-wrap gap-2">
                           <a href="https://chat.openai.com" target="_blank" rel="noopener noreferrer" className="tag tag-emerald hover:scale-105 transition-transform">
-                            ChatGPT / DALL-E <ExternalLink className="w-3 h-3" />
+                            ChatGPT <ExternalLink className="w-3 h-3" />
+                          </a>
+                          <a href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer" className="tag tag-emerald hover:scale-105 transition-transform">
+                            Copilot <ExternalLink className="w-3 h-3" />
+                          </a>
+                          <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" className="tag tag-emerald hover:scale-105 transition-transform">
+                            Gemini <ExternalLink className="w-3 h-3" />
                           </a>
                           <a href="https://www.freepik.com/ai" target="_blank" rel="noopener noreferrer" className="tag tag-emerald hover:scale-105 transition-transform">
-                            Freepik AI <ExternalLink className="w-3 h-3" />
-                          </a>
-                          <a href="https://www.midjourney.com" target="_blank" rel="noopener noreferrer" className="tag tag-emerald hover:scale-105 transition-transform">
-                            Midjourney <ExternalLink className="w-3 h-3" />
+                            Freepik <ExternalLink className="w-3 h-3" />
                           </a>
                         </div>
                       </div>
