@@ -1,0 +1,54 @@
+{
+  "project": "AI News Hackathon",
+  "feel": {
+    "description": "Prémiový, moderní, inspirativní",
+    "theme": "Budoucnost, inovace, technologie",
+    "approach": "Plně tmavý design s výraznými akcenty a velkými fonty"
+  },
+  "colors": {
+    "primary": {
+      "deep_blue": "#0A1A3A",
+      "electric_blue": "#1E5FE8"
+    },
+    "accent": {
+      "cyan": "#4FC3F7",
+      "coral_pink": "#F43F5E",
+      "amber": "#FBBF24"
+    },
+    "neutral": {
+      "white": "#FFFFFF",
+      "off_white": "#F8F9FC",
+      "dark_text": "#0A1A3A"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "display": "Outfit",
+      "body": "DM Sans"
+    },
+    "hero_heading": "text-5xl md:text-7xl lg:text-8xl font-bold",
+    "section_heading": "text-4xl md:text-5xl lg:text-6xl font-bold",
+    "body_large": "text-xl md:text-2xl text-gray-300"
+  },
+  "sections": {
+    "dark": "section-dark (bg-[#0A1A3A] text-white)",
+    "light": "section-light (bg-[#F8F9FC] text-[#0A1A3A])"
+  },
+  "cta_button": {
+    "class": "btn-cta",
+    "style": "bg-[#F43F5E] text-white rounded-full px-8 py-4 with glow"
+  },
+  "animations": {
+    "library": "framer-motion",
+    "fade_in_up": {
+      "initial": { "opacity": 0, "y": 30 },
+      "animate": { "opacity": 1, "y": 0 },
+      "transition": { "duration": 0.8 }
+    }
+  }
+}
+
+
+
+
+
