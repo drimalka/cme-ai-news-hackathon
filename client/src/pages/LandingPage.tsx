@@ -18,7 +18,9 @@ import {
   Lightbulb,
   FileText,
   Radio,
-  Bot
+  Bot,
+  Image,
+  Palette
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -121,36 +123,64 @@ export default function LandingPage() {
               Choose Your Path
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white">
-              Two Main Approaches
+              Choose Your Approach
             </h2>
           </motion.div>
 
-          {/* Main Approaches - 2 large cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          {/* Main Approaches - 3 cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* AI Chatbots */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="glass-card rounded-3xl p-10"
+              className="glass-card rounded-3xl p-8"
             >
               <div
-                className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
                 style={{ backgroundColor: `${COLORS.blue}20` }}
               >
-                <MessageSquare className="w-8 h-8" style={{ color: COLORS.blue }} />
+                <MessageSquare className="w-7 h-7" style={{ color: COLORS.blue }} />
               </div>
-              <h3 className="text-3xl font-display font-bold text-white mb-4">
+              <h3 className="text-2xl font-display font-bold text-white mb-4">
                 AI Chatbots
               </h3>
-              <p className="text-gray-400 leading-relaxed mb-6">
+              <p className="text-gray-400 leading-relaxed mb-6 text-sm">
                 Use conversational AI to build smart assistants, content generators, 
                 and research tools for your newsroom.
               </p>
-              <div className="flex flex-wrap gap-3">
-                <span className="tag tag-blue">ChatGPT</span>
-                <span className="tag tag-blue">Claude</span>
-                <span className="tag tag-blue">Gemini</span>
+              <div className="flex flex-wrap gap-2">
+                <span className="tag tag-blue text-xs">ChatGPT</span>
+                <span className="tag tag-blue text-xs">Claude</span>
+                <span className="tag tag-blue text-xs">Gemini</span>
+              </div>
+            </motion.div>
+
+            {/* Image Generation */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="glass-card rounded-3xl p-8"
+            >
+              <div
+                className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
+                style={{ backgroundColor: `${COLORS.emerald}20` }}
+              >
+                <Image className="w-7 h-7" style={{ color: COLORS.emerald }} />
+              </div>
+              <h3 className="text-2xl font-display font-bold text-white mb-4">
+                Image Generation
+              </h3>
+              <p className="text-gray-400 leading-relaxed mb-6 text-sm">
+                Create stunning visuals with consistent style. Learn to generate 
+                and edit images for your stories and campaigns.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="tag tag-emerald text-xs">ChatGPT</span>
+                <span className="tag tag-emerald text-xs">Freepik</span>
+                <span className="tag tag-emerald text-xs">Midjourney</span>
               </div>
             </motion.div>
 
@@ -159,26 +189,26 @@ export default function LandingPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="glass-card rounded-3xl p-10"
+              transition={{ delay: 0.2 }}
+              className="glass-card rounded-3xl p-8"
             >
               <div
-                className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
                 style={{ backgroundColor: `${COLORS.coral}20` }}
               >
-                <Code className="w-8 h-8" style={{ color: COLORS.coral }} />
+                <Code className="w-7 h-7" style={{ color: COLORS.coral }} />
               </div>
-              <h3 className="text-3xl font-display font-bold text-white mb-4">
+              <h3 className="text-2xl font-display font-bold text-white mb-4">
                 Vibe Coding
               </h3>
-              <p className="text-gray-400 leading-relaxed mb-6">
+              <p className="text-gray-400 leading-relaxed mb-6 text-sm">
                 Build functional apps and tools using AI-powered coding platforms. 
                 No prior coding experience required.
               </p>
-              <div className="flex flex-wrap gap-3">
-                <span className="tag tag-coral">Lovable</span>
-                <span className="tag tag-coral">Replit</span>
-                <span className="tag tag-coral">Cursor</span>
+              <div className="flex flex-wrap gap-2">
+                <span className="tag tag-coral text-xs">Lovable</span>
+                <span className="tag tag-coral text-xs">Replit</span>
+                <span className="tag tag-coral text-xs">Cursor</span>
               </div>
             </motion.div>
           </div>
@@ -501,6 +531,24 @@ export default function LandingPage() {
                           </a>
                           <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" className="tag tag-blue hover:scale-105 transition-transform">
                             Gemini <ExternalLink className="w-3 h-3" />
+                          </a>
+                        </div>
+                      </div>
+
+                      {/* Image Generation */}
+                      <div>
+                        <h4 className="text-sm font-semibold text-[#10B981] uppercase tracking-wider mb-3">
+                          Image Generation
+                        </h4>
+                        <div className="flex flex-wrap gap-2">
+                          <a href="https://chat.openai.com" target="_blank" rel="noopener noreferrer" className="tag tag-emerald hover:scale-105 transition-transform">
+                            ChatGPT / DALL-E <ExternalLink className="w-3 h-3" />
+                          </a>
+                          <a href="https://www.freepik.com/ai" target="_blank" rel="noopener noreferrer" className="tag tag-emerald hover:scale-105 transition-transform">
+                            Freepik AI <ExternalLink className="w-3 h-3" />
+                          </a>
+                          <a href="https://www.midjourney.com" target="_blank" rel="noopener noreferrer" className="tag tag-emerald hover:scale-105 transition-transform">
+                            Midjourney <ExternalLink className="w-3 h-3" />
                           </a>
                         </div>
                       </div>
